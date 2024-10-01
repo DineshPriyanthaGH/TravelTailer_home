@@ -1,0 +1,67 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: rgba(197, 197, 197, 0.38);
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-height: 72px;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    max-width: 1200px;
+   
+}
+
+.logo a {
+    width: 146px;
+    position: relative;
+    font-size: 36px;
+    font-family: 'Jaini Purva';
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    font-family: Jost;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+    
+    border-bottom: 3px solid #ffffff;
+}
+.nav-links a.active {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
