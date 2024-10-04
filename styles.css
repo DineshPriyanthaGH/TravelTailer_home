@@ -259,35 +259,67 @@ body {
 .load-more:hover {
     background-color: #555;
 }
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .info-section {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
 }
 
-.info-cards {
+/* First Column: Support Card */
+.support-column {
+    flex: 1;
+}
+
+.support-column .card {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #d9e8fc;
+    background-image: url('support-background-pattern.png');
+    background-size: cover;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-column .images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.support-column .images img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+/* Second Column: Best Price and Explore Cards */
+.info-cards-column {
+    flex: 1;
     display: flex;
     flex-direction: column;
-
-    width: 60%;
+    gap: 20px;
 }
 
-.card {
-    border-radius: 20px;
+.info-cards-column .card {
     padding: 20px;
+    border-radius: 20px;
     background-color: #f3f3f3;
-    position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+}
+
+.best-price {
+    background-color: #dff8cc;
+    background-image: url('https://s3-alpha-sig.figma.com/img/1195/b41f/1a8f76b1f0664daf6e50bce5d93eaebc?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P6VRSYJRJ-EAqDQRz0ohVhhLxJc9ZuSCuGAbEI2xkgCL2z3WP3zW3Whr1-NrjyZ68K2Lv8~Y0mqnc4abO2rLxs9-RU3PbyChZqWjPL~8z6bmV-GGtvqgmlDnPFnNgQAFFn0~ciez75ICx68o34SMCsS3KtPKanhAGtwmu8LqlAK0QdYLnqLSN4WAohgeSZzt1FDizjONHeB~t12eQIYySfGWGyol2P51SBGX2pOhjMeCZD5nAexCXKHvTvbwxP7nrOxPvOTVUBR-zSMBlj3q8kio4W3eZc9cy9qPlyY8J-AHiLOlZcAxpRoEINnVBQAwFd3piObaLExJrIWtUVK5VQ__');
+    background-size: cover;
+}
+
+.explore {
+    background-color: #bdefff;
+    background-image: url('explore-background.png');
+    background-size: cover;
 }
 
 .card h3 {
@@ -298,32 +330,6 @@ body {
 .card p {
     font-size: 14px;
     margin-bottom: 20px;
-}
-
-.card.support {
-    background-color: #d9e8fc;
-    height: 556.3px;
-    width: 240px;
-}
-
-.card.best-price {
-    background-color: #dff8cc;
-    height: 392px;
-    width: 364px;
-}
-
-.card.explore {
-    background-color: #bdefff;
-}
-
-.card .images {
-    display: flex;
-    gap: 10px;
-}
-
-.card .images img {
-  
-    border-radius: 10px;
 }
 
 .card .button {
@@ -346,13 +352,16 @@ body {
     font-size: 18px;
 }
 
-.travelers {
-    width: 30%;
-    text-align: center;
+/* Third Column: Traveler Image */
+.travelers-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.travelers img {
+.travelers-column img {
     width: 100%;
+    max-width: 300px;
     height: auto;
-    display: block;
 }
