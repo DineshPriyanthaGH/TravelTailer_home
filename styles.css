@@ -266,6 +266,7 @@ body {
     max-width: 1200px;
     margin: auto;
     gap: 20px;
+    height: 490px;
 }
 
 /* First Column: Support Card */
@@ -274,24 +275,28 @@ body {
 }
 
 .support-column .card {
+    
     padding: 20px;
     border-radius: 20px;
-    background-color: #d9e8fc;
-    background-image: url('support-background-pattern.png');
+    height: 460px;
+    width: 200px;
+    
+    background-color:#A8BAF9;
+    background-image: url('https://s3-alpha-sig.figma.com/img/2cb7/6699/1f9efc6870474192e9bf919a22cda642?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QeaRzEEsk6OYxoNDa-tkUaFzVOZktUUJzBPicZspWoPXyF5xD5q~P4NcXFm1Ao-J7FZcEeA~APSljuJaxNp7noOd4mOB~Vp8mCktoUbrkjmAUUhzE1o46v4cMLEl25EFLPqKYJJsdxEjaSUNrRMF5p0GNvr4enbXNpkk6EVEI5zABuSFTEhzQc56oaJz7cmlaERf39UKvaZB8H7QrMq5PlI5FVUhVIOoMrJCqpMzYTNlRlhPiauJ08w~7OEiDh8yW3zhc3ki8eMQFH6GgZXjWlGunS7VCXreEjXVm2bHj94qCahsy6wQSExPRAgPRmBOKQkVGJ8NshiMuYNq6xmRPA__');
     background-size: cover;
     color: #000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .support-column .images {
-    display: flex;
+    display: block;
     gap: 10px;
     margin-top: 10px;
 }
 
 .support-column .images img {
-    width: 70px;
-    height: 70px;
+    width: 226px;
+    height: 167px;
     border-radius: 10px;
 }
 
@@ -311,14 +316,14 @@ body {
 }
 
 .best-price {
-    background-color: #dff8cc;
+    background-color: #9ff76c;
     background-image: url('https://s3-alpha-sig.figma.com/img/1195/b41f/1a8f76b1f0664daf6e50bce5d93eaebc?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P6VRSYJRJ-EAqDQRz0ohVhhLxJc9ZuSCuGAbEI2xkgCL2z3WP3zW3Whr1-NrjyZ68K2Lv8~Y0mqnc4abO2rLxs9-RU3PbyChZqWjPL~8z6bmV-GGtvqgmlDnPFnNgQAFFn0~ciez75ICx68o34SMCsS3KtPKanhAGtwmu8LqlAK0QdYLnqLSN4WAohgeSZzt1FDizjONHeB~t12eQIYySfGWGyol2P51SBGX2pOhjMeCZD5nAexCXKHvTvbwxP7nrOxPvOTVUBR-zSMBlj3q8kio4W3eZc9cy9qPlyY8J-AHiLOlZcAxpRoEINnVBQAwFd3piObaLExJrIWtUVK5VQ__');
     background-size: cover;
 }
 
 .explore {
-    background-color: #bdefff;
-    background-image: url('explore-background.png');
+    background-color: #93e1f3;
+    background-image: url('https://s3-alpha-sig.figma.com/img/2dfb/c898/1a287f60104998e0535df0c19a7bea5a?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xx2JSqW-yaiu3bz39DBt4DndoBSSSEpeoRtdrqw6CrVfuZJZDNySk-Xra5rz81TicmwbPD1~7idW-EfijtmVukKeTsNy-TWG0BkI3TbdLwqJBp0-XWg2XdBwyum3uuGeHeQpqnw9v07rt7lRb8q1EsJl~cQa4~8nVLDu0oqX2rrnDFdAOUSa~h2xDbzIqQ~9xWChN3G8QsswZQOwWEQi5HL4Th2vevx~KU7u7rtxthislP3t~sSwU-VsBrznIKKypSzedowocjDrrqFTyAlsowIHUwM~cNDCoVHbGMhyJifr-qSrXEjRQSuEdRn8M7PoOcEmSEGYX4VW~h0UcKm5lw__');
     background-size: cover;
 }
 
@@ -333,7 +338,7 @@ body {
 }
 
 .card .button {
-    background-color: #ffeb3b;
+    background-color:#FEFA17;
     padding: 10px 20px;
     color: #333;
     font-size: 14px;
@@ -344,7 +349,7 @@ body {
 }
 
 .card .button:hover {
-    background-color: #ffc107;
+    background-color: #FEFA17;
 }
 
 .card .button span {
@@ -364,4 +369,215 @@ body {
     width: 100%;
     max-width: 300px;
     height: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.testimonials-section {
+    background-color: #0a132f;
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.rating-info {
+    font-size: 14px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-client {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial-client h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.testimonial-client p {
+    font-size: 12px;
+    color: #666;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.controls button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #ccc;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.faq-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.faq-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.faq-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.category-btn {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: #ddd;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.faq-toggle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-toggle {
+    color: #060606; /* Change toggle color to red when active */
 }

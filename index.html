@@ -212,8 +212,160 @@
         <img src="assets/images/img-travel.png.png" alt="Travelers">
     </div>
 </section>
+<section class="testimonials-section">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <p class="rating-info">Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
+
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <h3>Great Work</h3>
+                <p class="testimonial-text">"Amazing design, easy to customize and a design quality superlative account"</p>
+                <div class="testimonial-client">
+                    <img src="leslie.jpg" alt="Leslie Alexander">
+                    <div>
+                        <h4>Leslie Alexander</h4>
+                        <p>Facebook</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <h3>Awesome Design</h3>
+                <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"</p>
+                <div class="testimonial-client">
+                    <img src="floyd.jpg" alt="Floyd Miles">
+                    <div>
+                        <h4>Floyd Miles</h4>
+                        <p>Designer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <h3>Good Job</h3>
+                <p class="testimonial-text">"But I must explain to you how all this mistaken idea of denouncing pleasure and pr"</p>
+                <div class="testimonial-client">
+                    <img src="dianne.jpg" alt="Dianne Russell">
+                    <div>
+                        <h4>Dianne Russell</h4>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="prev">&#8249;</button>
+            <button class="next">&#8250;</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="faq-section">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p>You need to come at least once in your life</p>
+
+        <!-- Categories -->
+        <div class="faq-categories">
+            <button class="category-btn">Tours Booking</button>
+            <button class="category-btn">Activities</button>
+            <button class="category-btn">Destinations</button>
+            <button class="category-btn">Hotels Booking</button>
+            <button class="category-btn">Rental Car</button>
+            <button class="category-btn">Property</button>
+            <button class="category-btn">Tickets Booking</button>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="faq-item" onclick="toggleFaq(1)">
+            <div class="faq-question">
+                <span class="faq-number">01</span>
+                <h3>How does TravelTailor create personalized travel itineraries?</h3>
+                <span class="faq-toggle" id="toggle1">x</span>
+            </div>
+            <div class="faq-answer" id="answer1">
+                <p>At TravelTailor, we carefully craft each itinerary based on your preferences, interests, and budget. By gathering detailed information through our interactive Travel Planner tool, we can curate a unique travel experience that matches your style, whether you prefer adventure, relaxation, or cultural immersion.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(2)">
+            <div class="faq-question">
+                <span class="faq-number">02</span>
+                <h3>What kind of unique experiences can I expect from TravelTailor?</h3>
+                <span class="faq-toggle" id="toggle2">+</span>
+            </div>
+            <div class="faq-answer" id="answer2">
+                <p>TravelTailor offers a wide variety of experiences, from adventure trips to cultural immersion...</p>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(3)">
+            <div class="faq-question">
+                <span class="faq-number">03</span>
+                <h3>Can TravelTailor help with last-minute changes or issues during my trip?</h3>
+                <span class="faq-toggle" id="toggle3">+</span>
+            </div>
+            <div class="faq-answer" id="answer3">
+                <p>Yes, TravelTailor provides 24/7 customer service to assist you with any last-minute changes...</p>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(4)">
+            <div class="faq-question">
+                <span class="faq-number">04</span>
+                <h3>Can TravelTailor arrange transportation and accommodation for my trip?</h3>
+                <span class="faq-toggle" id="toggle4">+</span>
+            </div>
+            <div class="faq-answer" id="answer4">
+                <p>Absolutely, we can book transportation, accommodation, and all other travel needs...</p>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(5)">
+            <div class="faq-question">
+                <span class="faq-number">05</span>
+                <h3>What destinations does TravelTailor cover?</h3>
+                <span class="faq-toggle" id="toggle5">+</span>
+            </div>
+            <div class="faq-answer" id="answer5">
+                <p>TravelTailor covers a wide range of destinations around the world, including exotic and popular locations...</p>
+            </div>
+        </div>
+    </div>
+</section>
 
   
 
 </body>
+
+<script>
+    function toggleFaq(id) {
+        const faqItem = document.getElementById('answer' + id).parentNode;
+        const allFaqItems = document.querySelectorAll('.faq-item');
+
+        // Hide other FAQs
+        allFaqItems.forEach(item => {
+            if (item !== faqItem) {
+                item.classList.remove('active');
+                item.querySelector('.faq-answer').style.display = "none";
+                item.querySelector('.faq-toggle').textContent = "+";
+            }
+        });
+
+        // Toggle the clicked FAQ
+        if (faqItem.classList.contains('active')) {
+            faqItem.classList.remove('active');
+            document.getElementById('answer' + id).style.display = "none";
+            document.getElementById('toggle' + id).textContent = "+";
+        } else {
+            faqItem.classList.add('active');
+            document.getElementById('answer' + id).style.display = "block";
+            document.getElementById('toggle' + id).textContent = "x";
+        }
+    }
+</script>
+
 </html>
