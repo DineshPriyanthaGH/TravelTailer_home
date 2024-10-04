@@ -80,3 +80,279 @@ header {
     object-fit: cover;
     z-index: -1;
 }
+
+
+.popular-destinations {
+    text-align: center;
+    padding: 0px 0
+}
+
+.popular-destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.popular-destinations p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    text-align: center;
+    width: 150px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 30%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.carousel-image:hover {
+    transform: scale(1.1);
+}
+
+.carousel-slide h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.carousel-slide p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Carousel Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #ff5a5f;
+    color: white;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.recommended-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.recommended-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.recommended-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #6c6c6c;
+}
+
+.recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #00b894;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.details {
+    padding: 15px;
+}
+
+.details p {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.load-more {
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.load-more:hover {
+    background-color: #555;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card.support {
+    background-color: #d9e8fc;
+    height: 556.3px;
+    width: 240px;
+}
+
+.card.best-price {
+    background-color: #dff8cc;
+    height: 392px;
+    width: 364px;
+}
+
+.card.explore {
+    background-color: #bdefff;
+}
+
+.card .images {
+    display: flex;
+    gap: 10px;
+}
+
+.card .images img {
+  
+    border-radius: 10px;
+}
+
+.card .button {
+    background-color: #ffeb3b;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.card .button:hover {
+    background-color: #ffc107;
+}
+
+.card .button span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.travelers {
+    width: 30%;
+    text-align: center;
+}
+
+.travelers img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
